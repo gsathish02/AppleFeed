@@ -18,24 +18,20 @@ class ResultListCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        albumImage.image = nil
-        title.text = ""
-        subtitle.text = ""
-        dateLabel.text = ""
         title.translatesAutoresizingMaskIntoConstraints = false
-        title.font = UIFont.systemFont(ofSize: 20)
+        title.font = UIFont.boldSystemFont(ofSize: 18)
         title.lineBreakMode = .byWordWrapping
         title.numberOfLines = 0
         title.sizeToFit()
         
         subtitle.translatesAutoresizingMaskIntoConstraints = false
-        subtitle.font = UIFont.systemFont(ofSize: 20)
+        subtitle.font = UIFont.systemFont(ofSize: 16)
         subtitle.lineBreakMode = .byWordWrapping
         subtitle.numberOfLines = 0
         subtitle.sizeToFit()
         
         dateLabel.translatesAutoresizingMaskIntoConstraints = false
-        dateLabel.font = UIFont.systemFont(ofSize: 20)
+        dateLabel.font = UIFont.systemFont(ofSize: 15)
         dateLabel.lineBreakMode = .byWordWrapping
         dateLabel.numberOfLines = 0
         dateLabel.sizeToFit()
